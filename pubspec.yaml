@@ -1,7 +1,5 @@
 name: json_bridge
-description: JSONBridge is a simple wrapper around a JSON file.
-            It allows you to store and retrieve data from a JSON file.
-            The JSON file is stored in the application document directory.
+description: It allows you to store and retrieve data from a JSON file.
             It support manipulating nested keys with dot separated.
 version: 0.0.1
 homepage: https://github.com/Dahkenangnon/json_bridge.dart
