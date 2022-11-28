@@ -1,7 +1,7 @@
 # json_bridge.dart
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/dahkenangnon/json_bridge.dart?label=github%20stars)](https://github.com/dahkenangnon/json_bridge.dart)
-[![pub version](https://img.shields.io/pub/v/json_bridge.dart)](https://pub.dev/packages/json_bridge.dart)
+[![pub version](https://img.shields.io/pub/v/json_bridge.dart)](https://pub.dev/packages/json_bridge)
 [![GitHub last commit](https://img.shields.io/github/last-commit/dahkenangnon/json_bridge.dart)](https://github.com/dahkenangnon/json_bridge.dart)
 ![JSONBridge workflow](https://github.com/Dahkenangnon/json_bridge.dart/actions/workflows/build.yaml/badge.svg)
 
