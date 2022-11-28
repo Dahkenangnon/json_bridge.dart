@@ -239,29 +239,22 @@ Once again, everywhere you see a key, you can use dot separated keys to access n
 
 ## Why should you give a try ?
 
-> If it (data) can be a value in a `Map<String, dynamic>` you can save it into a json file with **JSONBridge**.
 >
-> **JSONBridge** is a simple wrapper around a JSON file
+> :point_right: It allows you to store and retrieve data from a JSON file.
 >
-> It allows you to store and retrieve data from a JSON file.
+> :point_right: The JSON file is stored in the application document directory or a dir you provide.
 >
-> The JSON file is stored in the application document directory.
+> :point_right: **JSONBridge** support manipulating nested keys with dot separated.
 >
-> But you can also specify a directory and a file name when calling the init method.
+> :point_right: Use **JSONBridge** to store user preferences, settings, data, etc.
 >
-> **JSONBridge** is a singleton
->
-> **JSONBridge** support manipulating nested keys with dot separated.
->
-> Use **JSONBridge** to store user preferences, settings, data, etc.
->
-> Use **JSONBridge** to build the next big and powerfull noSQL database for dart and flutter apps.
+> :point_right: Use **JSONBridge** to build the next big and powerfull noSQL database for dart and flutter apps.
 > 
-> Use **JSONBridge** to store any data in a JSON file within your application.
+> :point_right: Use **JSONBridge** to store any data in a JSON file within your application.
 >
-> Use **JSONBridge** to check if user is using your app for the first time.
+> :point_right: Use **JSONBridge** to check if user is using your app for the first time.
 >
-> Use **JSONBridge** to track user activity and show him the last seen screen when he restart the app.
+> :point_right: Use **JSONBridge** to track user activity and show him the last seen screen when he restart the app.
 >
 > Usecases are endless, use your imagination.
 
