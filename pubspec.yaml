@@ -3,6 +3,8 @@ description: It allows you to store and retrieve data from a JSON file.
             It support manipulating nested keys with dot separated.
 version: 0.0.1
 homepage: https://github.com/Dahkenangnon/json_bridge.dart
+repository: https://github.com/Dahkenangnon/json_bridge.dart
+issue_tracker: https://github.com/Dahkenangnon/json_bridge.dart/issues
 
 environment:
   sdk: '>=2.18.4 <3.0.0'

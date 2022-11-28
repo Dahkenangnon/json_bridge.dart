@@ -2,7 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 
-/// [JSONBridge] is a simple wrapper around a JSON file.
+/// If it (data) can be a value in a `Map<String, dynamic>` you can save it into a json file with [JSONBridge].
+///
+/// [JSONBridge] is a simple wrapper around a JSON file
 ///
 /// It allows you to store and retrieve data from a JSON file.
 ///
@@ -14,6 +16,17 @@ import 'package:path_provider/path_provider.dart';
 ///
 /// [JSONBridge] support manipulating nested keys with dot separated.
 ///
+/// Use [JSONBridge] to store user preferences, settings, data, etc.
+///
+/// Use [JSONBridge] to build the next big and powerfull noSQL database for dart and flutter apps.
+///
+/// Use [JSONBridge] to store any data in a JSON file within your application.
+///
+/// Use [JSONBridge] to check if user is using your app for the first time.
+///
+/// Use [JSONBridge] to track user activity and show him the last seen screen when he restart the app.
+///
+/// Usecases are endless, use your imagination.
 class JSONBridge {
   late File _file;
 
@@ -93,12 +106,12 @@ class JSONBridge {
 
     // Check if key contains dot separated keys
     if (key.contains('.')) {
-      // Ensure key don't start with a dot and end with a dot
+      // Ensure key don't start with a dot or end with a dot
       if (key.startsWith('.') || key.endsWith('.')) {
         return;
       }
 
-      // Ensure key don't contains two dots in a row
+      // Ensure key don't contains two dots in a consecutive way
       if (key.contains('..')) {
         return;
       }
@@ -148,12 +161,12 @@ class JSONBridge {
 
     // Check if key contains dot separated keys
     if (key.contains('.')) {
-      // Ensure key don't start with a dot and end with a dot
+      // Ensure key don't start with a dot or end with a dot
       if (key.startsWith('.') || key.endsWith('.')) {
         return;
       }
 
-      // Ensure key don't contains two dots in a row
+      // Ensure key don't contains two dots in a consecutive way
       if (key.contains('..')) {
         return;
       }
@@ -195,12 +208,12 @@ class JSONBridge {
     // When key contains a dot, it means that the key is nested.
     // We need to get the nested keys.
     if (key.contains('.')) {
-      // Ensure key don't start with a dot and end with a dot
+      // Ensure key don't start with a dot or end with a dot
       if (key.startsWith('.') || key.endsWith('.')) {
         return;
       }
 
-      // Ensure key don't contains two dots in a row
+      // Ensure key don't contains two dots in a consecutive way
       if (key.contains('..')) {
         return;
       }
