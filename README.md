@@ -9,6 +9,23 @@
 A powerful, flexible and easy to use JSON file manager for Dart and flutter app.
 
 ---
+
+## Compatibility
+
+Sdk & Flutter version supported:
+
+✅ &nbsp; SDK: >=2.14.0 <3.0.0 </br>
+✅ &nbsp; Flutter: >=2.10.0 </br>
+
+Platform supported:
+
+| Support | Android | iOS | Linux | macOS | Windows |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| JSONBridge | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+
+
+---
+
 ## Getting Started
 
 ### 1. Add the dependency
@@ -256,14 +273,6 @@ Once again, everywhere you see a key, you can use dot separated keys to access n
 > :point_right: Use **JSONBridge** to track user activity and show him the last seen screen when he restart the app.
 >
 > Usecases are endless, use your imagination.
-
-Platform supported:
-
-| Support | Android | iOS | Linux | macOS | Windows |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| JSONBridge | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
-
-
 
 
 ## Support

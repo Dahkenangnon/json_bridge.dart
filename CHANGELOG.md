@@ -1,4 +1,7 @@
-
+## 0.0.3
+- Downgrade SDK version to: >=2.14.0 
+- Flutter version supported: >=2.10.0
+- Update README.md
 ## 0.0.2
 
 Fix error in badge in README.md
