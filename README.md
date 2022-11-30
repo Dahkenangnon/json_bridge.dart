@@ -72,7 +72,13 @@ import 'package:json_bridge/json_bridge.dart';
 
 ```dart
 
-    // Omit dir to use your flutter application document directory
+  // Omit `dir` to use your flutter application document directory (No permission required).
+  //
+  //
+  // If you specify a dir, you have to set permissions accordingly because you're accessing an external directory.
+  //
+  // Please see https://developer.android.com/training/data-storage/app-specific#external for more info
+  //
   JSONBridge jsonBridge = JSONBridge()..init(fileName: 'config', dir: 'test');
 ```
 

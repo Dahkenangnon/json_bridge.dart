@@ -47,6 +47,11 @@ class JSONBridge {
   ///
   /// [dir] is the directory where the file will be created. By default, the application document directory is used.
   ///
+  ///If you specify a directory, you have to set permissions accordingly because you're accessing an external directory.
+  ///
+  ///Please refer to your target platform documentation for how to set permissions to access external directories.
+  ///
+  ///
   void init({required String fileName, String? dir}) async {
     Directory directory =
         dir != null ? Directory(dir) : await getApplicationDocumentsDirectory();
