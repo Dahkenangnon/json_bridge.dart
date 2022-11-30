@@ -26,6 +26,32 @@ Platform supported:
 
 ---
 
+
+## Why should you give a try ?
+
+>
+> :point_right: It allows you to store and retrieve data from a JSON file.
+>
+> :point_right: The JSON file is stored in the application document directory or a dir you provide.
+>
+> :point_right: **JSONBridge** support manipulating nested keys with dot separated.
+>
+> :point_right: Use **JSONBridge** to store user preferences, settings, data, etc.
+>
+> :point_right: Use **JSONBridge** to build the next big and powerfull noSQL database for dart and flutter apps.
+> 
+> :point_right: Use **JSONBridge** to store any data in a JSON file within your application.
+>
+> :point_right: Use **JSONBridge** to check if user is using your app for the first time.
+>
+> :point_right: Use **JSONBridge** to track user activity and show him the last seen screen when he restart the app.
+>
+> Usecases are endless, use your imagination.
+
+
+
+---
+
 ## Getting Started
 
 ### 1. Add the dependency
@@ -251,29 +277,6 @@ Once again, everywhere you see a key, you can use dot separated keys to access n
 | void delete(String key)         | Delete a key from the json file         |
 | dynamic get(String key)        | Get a value from the json file         |
 | bool has(String key)        | Check if a key exists in the JSON file.         |
-
-
-## Why should you give a try ?
-
->
-> :point_right: It allows you to store and retrieve data from a JSON file.
->
-> :point_right: The JSON file is stored in the application document directory or a dir you provide.
->
-> :point_right: **JSONBridge** support manipulating nested keys with dot separated.
->
-> :point_right: Use **JSONBridge** to store user preferences, settings, data, etc.
->
-> :point_right: Use **JSONBridge** to build the next big and powerfull noSQL database for dart and flutter apps.
-> 
-> :point_right: Use **JSONBridge** to store any data in a JSON file within your application.
->
-> :point_right: Use **JSONBridge** to check if user is using your app for the first time.
->
-> :point_right: Use **JSONBridge** to track user activity and show him the last seen screen when he restart the app.
->
-> Usecases are endless, use your imagination.
-
 
 ## Support
 
