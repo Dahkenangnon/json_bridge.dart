@@ -1,3 +1,5 @@
+## 0.0.4
+- update: improve the README.md file readability
 ## 0.0.3
 - Downgrade SDK version to: >=2.14.0 
 - Flutter version supported: >=2.10.0
