@@ -298,4 +298,4 @@ Fire up now and enjoy! :rocket:
 
 This project is licensed under the BSD-3-Clause License - see the [LICENSE](LICENSE) file for details.
 
-Maintained by [Justin Dah-kenangnon](https://Dahkenangnon.com) with ❤️
+Maintained by [Justin Dah-kenangnon](https://Dah-kenangnon.com) with ❤️
