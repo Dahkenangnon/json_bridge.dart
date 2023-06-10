@@ -1,6 +1,6 @@
 # JSON Bridge for Dart and Flutter
 
-![JSON Bridge](banner.png)
+![JSON Bridge](doc/jbf.png)
 
 [![GitHub Repo Stars](https://img.shields.io/github/stars/dahkenangnon/json_bridge.dart?label=Star%20on%20GitHub&style=social)](https://github.com/dahkenangnon/json_bridge.dart)
 [![pub package](https://img.shields.io/pub/v/json_bridge.svg)](https://pub.dev/packages/json_bridge)
