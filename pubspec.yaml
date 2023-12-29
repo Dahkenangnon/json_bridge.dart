@@ -2,23 +2,23 @@ name: json_bridge
 description: It allows you to store and retrieve data from a JSON file.
             It support manipulating nested keys with dot separated.
 version: 0.0.4
-homepage: https://github.com/Dahkenangnon/json_bridge.dart
+homepage: https://dah-kenangnon.com
 repository: https://github.com/Dahkenangnon/json_bridge.dart
 issue_tracker: https://github.com/Dahkenangnon/json_bridge.dart/issues
 
 environment:
-  sdk: ">=2.14.0 <3.0.0"
+  sdk: ">=2.14.0 <4.0.0"
   flutter: ">=2.10.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  path_provider: ^2.0.11
+  path_provider: ^2.1.1 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
 
 
 flutter:

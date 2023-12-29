@@ -2,6 +2,19 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 
+
+/// Enum to specify the directory where the file will be created.
+/// 
+/// [applicationDocumentsDirectory] is the default directory.
+enum PreferDir {
+  applicationDocumentsDirectory,
+  applicationSupportDirectory,
+  externalStorageDirectory,
+  libraryDirectory,
+  temporaryDirectory,
+  customDirectory // for when you want to use a custom directory
+}
+
 /// If it (data) can be a value in a `Map<String, dynamic>` you can save it into a json file with [JSONBridge].
 ///
 /// [JSONBridge] is a simple wrapper around a JSON file
@@ -14,11 +27,11 @@ import 'package:path_provider/path_provider.dart';
 ///
 /// [JSONBridge] is a singleton
 ///
-/// [JSONBridge] support manipulating nested keys with dot separated.
+/// [JSONBridge] support manipulating nested keys with dot as separator.
 ///
 /// Use [JSONBridge] to store user preferences, settings, data, etc.
 ///
-/// Use [JSONBridge] to build the next big and powerfull noSQL database for dart and flutter apps.
+/// Use [JSONBridge] to build the next big and powerful noSQL database for dart and flutter apps.
 ///
 /// Use [JSONBridge] to store any data in a JSON file within your application.
 ///
@@ -26,7 +39,7 @@ import 'package:path_provider/path_provider.dart';
 ///
 /// Use [JSONBridge] to track user activity and show him the last seen screen when he restart the app.
 ///
-/// Usecases are endless, use your imagination.
+/// Use cases are endless, use your imagination.
 class JSONBridge {
   late File _file;
 
@@ -43,7 +56,7 @@ class JSONBridge {
   ///
   /// You have to call this method before using the other methods.
   ///
-  /// [fileName] is the name of the file to create.
+  /// [fileName] is the name of the file to create. By default, the file name is `json_bridge_data`.
   ///
   /// [dir] is the directory where the file will be created. By default, the application document directory is used.
   ///
@@ -52,10 +65,52 @@ class JSONBridge {
   ///Please refer to your target platform documentation for how to set permissions to access external directories.
   ///
   ///
-  void init({required String fileName, String? dir}) async {
-    Directory directory =
-        dir != null ? Directory(dir) : await getApplicationDocumentsDirectory();
-    _file = File('${directory.path}/$fileName.json');
+  void init(
+      {String fileName = 'json_bridge_data.json',
+      String? dir,
+      PreferDir preferDir = PreferDir.applicationDocumentsDirectory}) async {
+    // Ensure fileName is not empty
+    if (fileName.isEmpty) {
+      throw Exception('JSONBridge: File name cannot be empty');
+    }
+
+    // If the file name contains already .json, don't add it again
+    if (!fileName.endsWith('.json')) {
+      fileName += '.json';
+    }
+
+    Directory? directory;
+    switch (preferDir) {
+      case PreferDir.applicationDocumentsDirectory:
+        directory = await getApplicationDocumentsDirectory();
+        break;
+      case PreferDir.applicationSupportDirectory:
+        directory = await getApplicationSupportDirectory();
+        break;
+      case PreferDir.externalStorageDirectory:
+        directory = await getExternalStorageDirectory();
+        break;
+      case PreferDir.libraryDirectory:
+        directory = await getLibraryDirectory();
+        break;
+      case PreferDir.temporaryDirectory:
+        directory = await getTemporaryDirectory();
+        break;
+      case PreferDir.customDirectory:
+        directory = Directory(dir!);
+        break;
+      default:
+        directory = await getApplicationDocumentsDirectory();
+    }
+
+    if (directory == null) {
+      throw Exception('JSONBridge: Directory cannot be null');
+    }
+
+    // File object
+    _file = File('${directory.path}/$fileName');
+
+    // Create the file if it doesn't exist
     if (!_file.existsSync()) {
       _file.createSync();
     }

@@ -11,6 +11,20 @@
 
 ---
 
+## Improvement in Progress
+
+Currently, I'm working on the following improvements. Keep in mind that there are not yet available in the current version of the package.
+- Fix typo in doc comments (✅)
+- Add default value to the fileName (json_bridge_data.json) passed to the init method (✅)
+- You can leave the .json file extension or not, it will be added automatically if not present (✅)
+- Add ability to choose predefined path to save the json file in: (✅)
+    - applicationDocumentsDirectory, 
+    - applicationSupportDirectory, 
+    - externalStorageDirectory, 
+    - libraryDirectory, 
+    - temporaryDirectory,
+    - customDirectory (you can pass a custom path to the init method)
+- Provide example app for each supported platform in progress (⌛️)
 
 ## Compatibility and Platform Support
 
